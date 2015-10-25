@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Fabric.js Async Filters with Web Workers</title>
+    <style type="text/css"></style>
+</head>
+<body>
+<ul style="list-style: none; padding: 0; margin: 0">
+    <li class="detect-promise" style="padding: 20px; margin: 5px"><a style="color:white;" href="http://caniuse.com/#search=promises" target="_blank">Does my browser support Promises?</a></li>
+    <li class="detect-worker" style="padding: 20px; margin: 5px"><a style="color:white;" href="http://caniuse.com/#search=web%20workers" target="_blank">Does my browser support Web Workers?</a></li>
+    <li class="detect-blob" style="padding: 20px; margin: 5px"><a style="color:white;" href="http://caniuse.com/#feat=bloburls" target="_blank">Does my browser support Blob Urls?</a></li>
+</ul>
+<label style="display:block; margin: 20px 0 0 5px">Use the slider to apply multiple combined filters on the fly
+    <input style="width:25%" type="range" id="range-cat" step="0.01" min="0" max="255"/>
+</label>
+<label style="display:block; margin: 20px 0 0 5px">Use the slider to apply multiple combined filters on the fly
+    <input style="width:25%" type="range" id="range-bear" step="1" min="0" max="255"/>
+</label>
+<span class="status-cat"></span>
+<span class="status-bear"></span>
+<canvas id="example"></canvas>
+<script defer src="../dependencies/fabric/dist/fabric.min.js"></script>
+<script defer src="../dependencies/promise-polyfill/Promise.min.js"></script>
+<script defer src="../dist/applyPromisedFilter.js"></script>
+<script defer src="../dist/filters/colorMatrixFilterWorker.js"></script>
+<script defer src="../dist/filters/woodFilterWorker.js"></script>
+<script defer src="../example/example.js"></script>
+</body>
+</html>
