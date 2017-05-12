@@ -1,5 +1,7 @@
 # Async Filters for fabric.js with web workers
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pixolith/fabricjs-async-web-worker-filters.svg)](https://greenkeeper.io/)
+
 ## to be expanded
 
 ## Note
